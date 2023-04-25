@@ -1,0 +1,73 @@
+main {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+}
+.container-header {
+    background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url("./img/portada.jpg");
+    background-size: cover;
+    background-position: center center;
+    height: 93vh;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    height: 28rem;
+    width: 19rem;
+}
+
+.sell {
+    max-height: 3.5rem;
+    color: #a19300;
+    font-weight: bold;
+}
+
+.alone {
+    max-height: 3.5rem;
+    color: #0f4699;
+    font-weight: bold;
+}
+
+.alone .price, .sell .price {
+    font-size: 15px;
+}
+
+/* responsive */
+
+
+@media screen and (max-width: 576px) {
+    .col {
+        display: flex;
+        justify-content: center;        
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .card {
+        width: 16rem;
+    }
+    .sell {
+      padding: 2;         
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .card {
+        width: 14rem;
+    }
+    .card-footer {
+        size: 10px;
+    }
+    .text-price {
+        size: 20px;
+    }
+    .sell, .alone {
+        max-height: 2.5rem;
+        padding: 0;
+    }
+}
